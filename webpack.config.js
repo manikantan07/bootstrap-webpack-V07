@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const WebpackCriticalCSSInliner = require('webpack-critical-css-inliner');
 const { webpack, ProvidePlugin } = require("webpack");
 
 module.exports = {
