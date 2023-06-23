@@ -1,5 +1,5 @@
 import $ from 'jquery';
-window.jQuery = $;
+window.jQuery = $; 
 window.$ = $;
 
 import 'bootstrap/js/dist/popover';
