@@ -25,10 +25,6 @@ body {
 	max-width: 1484px;
 }
 
-.row {
-    --bs-gutter-x: 20px;
-}
-
 ul {
 	padding: 0;
 	margin: 0;
@@ -66,7 +62,6 @@ p, .h6 {
 	margin: 0;
 }
 
-.ms-auto {
-	margin-inline-start: auto !important;
-	margin-inline-end: 0 !important;
+h1 {
+	@include rfs(50px, font-size);
 }

@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-webpack-v08", 
-  "version": "1.0.0",
+  "name": "bootstrap-webpack",
+  "version": "9.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
@@ -11,6 +11,7 @@
     "copy": "npm-run-all --parallel copy:*",
     "watch:assets": "onchange \"src/assets/**/*\" -- npm run clone",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:pug": "pug -w -P ./src/templates/pages -o ./dist",
     "watch:sass": "sass --watch src/sass:dist/assets/_css ",
     "css-prefix": "postcss --replace ./dist/assets/_css/**/*.css --use autoprefixer --map",
     "postbuild": "postcss css-prefix css-purge dist/assets/_css/*.css --use autoprefixer -r --no-map",
@@ -59,6 +60,7 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.3",
+    "pug-cli": "^1.0.0-alpha6",
     "purgecss": "^5.0.0"
   }
 }

@@ -10,6 +10,6 @@ import 'bootstrap/js/dist/tab';
 import 'bootstrap/js/dist/modal';
 
 
-import './assets/js/vendor/slick';
+// import './assets/js/vendor/slick';
 
 import './assets/js/custom';
